@@ -1,76 +1,55 @@
-// ********************************************
-// SETUP
-const btn = document.querySelector('button');
-const form = document.querySelector('form');
 
-// Bind event listeners
-btn.addEventListener('click', getMessage);
-form.addEventListener('submit', submitPet);
+const form = document.querySelector('form')
+const btn = document.querySelector('#doSomething')
 
-// Fetch all pets as soon as app is loaded
-getAllPets();
+const testbtn = document.querySelector('#searchTerm')
+console.log(testbtn.value)
 
-// ********************************************
-// Pets Flow
-// index
-function getAllPets(){
-    fetch('http://localhost:3000/pets')
-        .then(r => r.json())
-        .then(appendPets)
-        .catch(console.warn)
+
+// if(btn){
+// btn.addEventListener('click', (e)=> {
+//     window.location.href = "./search.html"
+// })
+// }
+
+if(form){
+//this is the random search bar function
+form.addEventListener('submit', (e)=>{
+
+    const linkData = e.target.elements.searchTerm.value
+    fetch(`http://localhost:3000/${linkData}/random`)
+    .then(resp => resp.json())
+    .then((data)=>{
+        window.location.href = data.link
+    })
+    .catch(console.warn)  
+
+})
+}
+
+function getRandom() {
+
+  fetch('http://localhost:3000/cakes')
+    .then(resp => resp.json())
+    .then((data)=>{
+        
+        appendLinks(data)
+    })
+
+    .catch(console.warn)
+}
+
+function appendLink(data){
+    const newLi = document.createElement('li')
+    const newLink = document.createElement('a');
+    newLink.href = data.link
+    newLi.textContent = newLink
+    const linkList = document.querySelector('ul');
+    newLink.append(newLi);
+    linkList.append(newLink);
 };
 
-// create
-function submitPet(e){
-    e.preventDefault();
-    console.log(e.target.petNameText.value);
-    const petData = {
-        name: e.target.petNameText.value,
-        age: e.target.petAge.value
-    };
-
-    const options = { 
-        method: 'POST',
-        body: JSON.stringify(petData),
-        headers: {
-            "Content-Type": "application/json"
-        }
-    };
-
-    fetch('http://localhost:3000/pets', options)
-        .then(r => r.json())
-        .then(appendPet)
-        .catch(console.warn)
+function appendLinks(link){
+    console.log(link)
+    link.forEach(appendLink);
 };
-
-// helpers
-function appendPets(pets){
-    pets.forEach(appendPet);
-};
-
-function appendPet(petData){
-    const newLi = document.createElement('li');
-    newLi.textContent = `Name: ${petData.name} || Age: ${petData.age}`
-    const petsList = document.querySelector('ul');
-    petsList.append(newLi);
-};
-
-// ********************************************
-
-// MESSAGE FLOW
-function getMessage(){
-    fetch('http://localhost:3000')
-        .then(r => r.text())
-        .then(renderMessage)
-        .catch(console.warn)
-};
-
-function renderMessage(msgText){
-    const msg = document.createElement('p');
-    msg.textContent = msgText;
-    msg.style.color = 'red';
-    document.body.append(msg);
-};
-
-// ********************************************
-
