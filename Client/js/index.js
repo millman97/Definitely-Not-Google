@@ -1,21 +1,46 @@
 
 const form = document.querySelector('form')
 const btn = document.querySelector('#doSomething')
+const homepage = document.querySelector('#homepage')
+const searchResults = document.querySelector('#searchResults')
 
+console.log(homepage);
 
-
-if(btn){
-btn.addEventListener('click', (e)=> {
-    window.location.href = "./search.html"
-})
-}
-
-if(form){
-//this is the random search bar function
-form.addEventListener('submit', (e)=>{
-
+form.addEventListener('submit', (e)=> {
+    e.preventDefault();
     const linkData = e.target.elements.searchTerm.value
 
+    fetch(`http://localhost:3000/${linkData}`)
+    .then(resp => resp.json())
+    .then((data)=>{
+        let html = '';
+        data.forEach(datum => {
+        let htmlSegment = ` <li>
+                                <p>${datum.link}</p>
+                                <h2> <a href="${datum.link}">${datum.title}</a> </h2>
+                                <p>${datum.description}</p>
+                            </li>
+                            <br>`;
+
+        html += htmlSegment;
+        console.log(html);
+    });
+
+    let container = document.querySelector('#resultsList');
+    container.innerHTML = html;
+    })
+
+    homepage.style.display = 'none';
+    searchResults.style.display = 'block';
+})
+
+
+//this is the random search bar function
+btn.addEventListener('click', (e)=>{
+    e.preventDefault();
+
+    const linkData = document.querySelector('input').value;
+    
     
     fetch(`http://localhost:3000/${linkData}/random`)
     .then(resp => resp.json())
@@ -25,11 +50,11 @@ form.addEventListener('submit', (e)=>{
     .catch(console.warn)  
 
 })
-}
+
 
 function getRandom() {
 
-  fetch('http://localhost:3000/cakes')
+  fetch(`http://localhost:3000/${linkData}`)
     .then(resp => resp.json())
     .then((data)=>{
         
