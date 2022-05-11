@@ -5,8 +5,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const petRoutes = require('./controllers/pets');
-app.use('/pets', petRoutes);
+const searchRoutes = require('./controllers/search');
+app.use('/', searchRoutes);
 
 app.get('/', (req, res) => {
     res.send('Hello there!');
