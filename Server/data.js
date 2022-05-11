@@ -14,29 +14,29 @@ const cakes = [
 ];
 
 const cookies = [
-    {id: 1 , link: 'https://www.bbcgoodfood.com/recipes/collection/cookie-recipes', title: '', description: '', favicon:''},
-    {id: 2 , link: 'https://tasty.co/recipe/the-best-chewy-chocolate-chip-cookies', title: '', description: '', favicon:''},
-    {id: 3 , link: 'https://en.wikipedia.org/wiki/Cookie', title: '', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
-    {id: 4 , link: 'https://en.wikipedia.org/wiki/HTTP_cookie', title: '', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
-    {id: 5 , link: 'https://ico.org.uk/your-data-matters/online/cookies/', title: '', description: '', favicon:''},
-    {id: 6 , link: 'https://www.gov.uk/help/cookies', title: '', description: '', favicon:''},
-    {id: 7 , link: 'https://www.jamieoliver.com/recipes/beautiful-baking/cookie/', title: '', description: '', favicon:''},
-    {id: 8 , link: 'https://wickedcookies.co.uk/all-cookies/', title: '', description: '', favicon:''},
-    {id: 9 , link: 'https://uk.norton.com/internetsecurity-privacy-what-are-cookies.html', title: '', description: '', favicon:''},
-    {id: 10 , link: 'https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DAndroid', title: '', description: '', favicon:''}
+    {id: 1 , link: 'https://www.bbcgoodfood.com/recipes/collection/cookie-recipes', title: 'Cookie recipes | BBC Good Food', description: 'Cookies make the perfect rainy afternoon treat. From gooey American chocolate chip cookies to melty shortbread, we\'ve got a selection to please everyone.', favicon:''},
+    {id: 2 , link: 'https://tasty.co/recipe/the-best-chewy-chocolate-chip-cookies', title: 'The Best Chewy Chocolate Chip Cookies Recipe by Tasty', description: 'There are a few secrets to the best classic, chewy chocolate chip cookies. Number one: Don’t use chips; instead, opt for a mix of milk or semisweet and dark chocolate chunks. The second is to let the dough rest overnight or longer for a more complex, toffee-like flavor. Lastly, use an ice cream scooper to get even-sized cookies every time. And that’s it! With these little tweaks, the result is a cookie that’s textured on the outside, and soft and gooey on the inside. Absolutely perfect!', favicon:''},
+    {id: 3 , link: 'https://en.wikipedia.org/wiki/Cookie', title: 'Cookie - Wikipedia', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
+    {id: 4 , link: 'https://en.wikipedia.org/wiki/HTTP_cookie', title: 'HTTP cookie - Wikipedia', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
+    {id: 5 , link: 'https://ico.org.uk/your-data-matters/online/cookies/', title: 'Cookies | ICO', description: '', favicon:''},
+    {id: 6 , link: 'https://www.gov.uk/help/cookies', title: 'Cookies on GOV.UK	', description: '', favicon:''},
+    {id: 7 , link: 'https://www.jamieoliver.com/recipes/beautiful-baking/cookie/', title: 'Cookie Recipes | Jamie Oliver', description: 'Discover Jamie Oliver\'s collection of delicious cookie recipes online today and make the perfect treat that both the kids and the adults will enjoy.', favicon:''},
+    {id: 8 , link: 'https://wickedcookies.co.uk/all-cookies/', title: 'Buy Cookies Online - Over 40 Amazing Flavours Plus Gluten Free / Dairy Free', description: 'Wicked Cookies make and bake the tastiest, gooeyist cookies in the UK! Baked fresh daily and made from the very finest ingredients. Gluten & Dairy Free Cookies Available', favicon:''},
+    {id: 9 , link: 'https://uk.norton.com/internetsecurity-privacy-what-are-cookies.html', title: 'What Are Cookies?', description: 'Mention “cookies,” and most people expect a treat to appear. When talking about computers, however, cookies aren’t what’s on the dessert menu. In fact, they’re not even physical objects.', favicon:''},
+    {id: 10 , link: 'https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DAndroid', title: 'Clear, enable, and manage cookies in Chrome - Android - Google Chrome Help', description: 'You can choose to delete existing cookies, allow or block all cookies, and set preferences for certain websites.What cookies areCookies are files created by websites you visit. They make your onli', favicon:''}
 ];
 
 const fruits = [
-    {id: 1 , link: 'https://www.halfyourplate.ca/fruits-and-veggies/fruits-a-z/', title: '', description: '', favicon:''},
-    {id: 2 , link: 'https://en.wikipedia.org/wiki/Fruit', title: '', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
-    {id: 3 , link: 'https://www.healthline.com/nutrition/healthy-fruit', title: '', description: '', favicon:''},
-    {id: 4 , link: 'https://www.wcrf-uk.org/healthy-eating/food-for-thought/list-of-fruit-from-a-to-z/', title: '', description: '', favicon:''},
-    {id: 5 , link: 'https://www.sainsburys.co.uk/shop/gb/groceries/fruit-veg/fresh-fruit', title: '', description: '', favicon:''},
-    {id: 6 , link: 'https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/vegetables-and-fruits/', title: '', description: '', favicon:''},
-    {id: 7 , link: 'https://en.wikipedia.org/wiki/Apple', title: '', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
-    {id: 8 , link: 'https://en.wikipedia.org/wiki/Orange_(fruit)', title: '', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
-    {id: 9 , link: 'https://en.wikipedia.org/wiki/Orange_S.A.', title: '', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
-    {id: 10 , link: 'https://en.wikipedia.org/wiki/Pear', title: '', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'}
+    {id: 1 , link: 'https://www.halfyourplate.ca/fruits-and-veggies/fruits-a-z/', title: 'Fruits from A-Z - Half Your Plate', description: 'A comprehensive list of fruits from A-Z', favicon:''},
+    {id: 2 , link: 'https://en.wikipedia.org/wiki/Fruit', title: 'Fruit - Wikipedia', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
+    {id: 3 , link: 'https://www.healthline.com/nutrition/healthy-fruit', title: '20 Tasty Fruits with Health Benefits', description: 'These 20 delicious fruits are packed with many nutrients that will help you maintain your health and reduce your risk of disease.', favicon:''},
+    {id: 4 , link: 'https://www.wcrf-uk.org/healthy-eating/food-for-thought/list-of-fruit-from-a-to-z/', title: 'List of fruit from A to Z | World Cancer Research Fund', description: 'From avocados to zucchini, add something unusual to your 5 A DAY with our fuit alphabet! Eating lots of fruit & veg is great for our health', favicon:''},
+    {id: 5 , link: 'https://www.sainsburys.co.uk/shop/gb/groceries/fruit-veg/fresh-fruit', title: 'All Fruit Products | Sainsbury\'s', description: 'Buy from our all fruit range here at Sainsbury\'s. Choose from 1 hour delivery slots and collect Nectar points online today. Buy online today.', favicon:''},
+    {id: 6 , link: 'https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/vegetables-and-fruits/', title: 'Vegetables and Fruits | The Nutrition Source | Harvard T.H. Chan School of Public Health', description: 'Vegetables and fruits are an important part of a healthy diet, and variety is as important as quantity. Learn how to increase your intake.', favicon:''},
+    {id: 7 , link: 'https://en.wikipedia.org/wiki/Apple', title: 'Apple - Wikipedia', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
+    {id: 8 , link: 'https://en.wikipedia.org/wiki/Orange_(fruit)', title: 'Orange (fruit) - Wikipedia', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
+    {id: 9 , link: 'https://en.wikipedia.org/wiki/Orange_S.A.', title: 'Orange S.A. - Wikipedia', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'},
+    {id: 10 , link: 'https://en.wikipedia.org/wiki/Pear', title: 'Pear - Wikipedia', description: '', favicon:'https://en.wikipedia.org/static/favicon/wikipedia.ico'}
 ];
 
 const results = {
