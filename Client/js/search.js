@@ -1,6 +1,4 @@
 
-console.log(linkData)
-
 document.addEventListener('DOMContentLoaded', ()=>{
     getRandom()
 

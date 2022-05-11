@@ -2,21 +2,21 @@
 const form = document.querySelector('form')
 const btn = document.querySelector('#doSomething')
 
-const testbtn = document.querySelector('#searchTerm')
-console.log(testbtn.value)
 
 
-// if(btn){
-// btn.addEventListener('click', (e)=> {
-//     window.location.href = "./search.html"
-// })
-// }
+if(btn){
+btn.addEventListener('click', (e)=> {
+    window.location.href = "./search.html"
+})
+}
 
 if(form){
 //this is the random search bar function
 form.addEventListener('submit', (e)=>{
 
     const linkData = e.target.elements.searchTerm.value
+
+    
     fetch(`http://localhost:3000/${linkData}/random`)
     .then(resp => resp.json())
     .then((data)=>{
