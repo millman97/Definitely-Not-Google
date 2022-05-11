@@ -18,19 +18,22 @@
 <body class="container-fluid h-100">
 
     <div class="d-flex justify-content-center mt-5">
-    <img src="../logo.png" alt="A logo for our website">
+    <img id="logo" src="../logo.png" alt="A logo for our website">
     </div>
 
     <nav class="container">
         <div class="d-flex justify-content-center">
 
             <form class="m-5 container">
-                
-                <input name="searchTerm" id="searchTerm" class="form-control w-100" type="search" placeholder="Search"
+                    
+                <div class="d-flex ">
+                        <img src="../magnifying-glass-svgrepo-com.svg" width="20" height="20" class="" alt="a magnifying glass icon">
+                <input name="searchTerm" id="searchTerm" class="form-control w-100 " type="search" placeholder="Search"
                     aria-label="Search">
-                <div class="mt-2 d-flex justify-content-center">
+                </div>
+                    <div class="mt-4 d-flex justify-content-center">
                     <button class="btn me-3" style="background-color: #F8F9FA; color: #3C4043;"  type="button" id="doSomething">Search</button>
-                    <button class="btn" style="background-color: #F8F9FA; color: #3C4043;" type="submit">Random page</button>
+                    <button class="btn" style="background-color: #F8F9FA; color: #3C4043;" type="submit">I'm Feeling Lucky</button>
                 </div>
             </form>
         </div>
