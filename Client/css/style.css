@@ -9,7 +9,6 @@
 
 html{
     box-sizing: border-box;
-    margin: 5vh;
 }
 
 p{
@@ -22,6 +21,9 @@ p{
     height: 25vh;
 }
 
+li{
+    list-style-type: none;
+}
 
 #searchTerm{
     display: flex;
@@ -42,3 +44,14 @@ p{
     border-color: rgba(223, 225, 229, 0);
 }
 
+#searchDiv{
+    display: inline-flex;
+    padding-top: 30px;
+}
+
+#logo2{
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 0;
+}
