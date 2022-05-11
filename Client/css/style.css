@@ -16,11 +16,29 @@ p{
     margin-bottom: 2.5vh;
 }
 
-form{
-    margin: auto;
+#searchTerm{
+    display: flex;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    width: auto;
+    max-width: 584px;
 }
 
-input{
-    display: block;
-    margin-bottom: 2.5vh;
+#searchTerm:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18px;
+    width:70vw;
 }
