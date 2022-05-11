@@ -16,7 +16,7 @@ form.addEventListener('submit', (e)=> {
         let html = '';
         data.forEach(datum => {
         let htmlSegment = ` <li>
-                                <p>${datum.link}</p>
+                               
                                 <h2> <a href="${datum.link}">${datum.title}</a> </h2>
                                 <p>${datum.description}</p>
                             </li>
