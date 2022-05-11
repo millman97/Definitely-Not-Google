@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/index.js"></script>
@@ -12,23 +13,29 @@
 
 
 <body class="container-fluid h-100">
-
+    <a href=""></a>
     <p class="text-center">where a logo will go</p>
     <h1 class="text-center">Definitely not Google</h1>
-   
-    <nav class="navbar container">
 
+    <nav class="container">
         <div class="container-fluid">
-          <form class="d-flex">
-            <input name="searchTerm" id="searchTerm" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Random page</button>
-            <button class="btn btn-outline-success me-2" type="button" id="doSomething">Search</button>
-          </form>
+
+            <form>
+                <input name="searchTerm" id="searchTerm" class="form-control" type="search" placeholder="Search"
+                    aria-label="Search">
+                <div class="btnContainer">
+                    <button class="btn btn-outline-success" type="button" id="doSomething">Search</button>
+                    <button class="btn btn-outline-success" type="submit">Random page</button>
+                </div>
+            </form>
         </div>
 
-      
+        <div class="container-fluid p-4">
+            <form class="d-flex">
 
+                <!-- <button class="btn btn-outline-secondary" type="button" id="random">Random page</button> -->
+            </form>
+        </div>
     </nav>
-
 </body>
 </html>
