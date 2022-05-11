@@ -3,7 +3,7 @@
 This project looks at recreating a Google like search function. You are able to generate a random page when using one of the key terms we have in our data base and clicking the "I'm feeling lucky" button.
 To display a list of results, use one of the key words and use the search button, this will take you to a page which displays the results.
 # Key words 
-**cakes, cookies, fruits**.
+**cakes, cookies, fruits**. 
 
 ## Installation & Usage
 ### Installation
