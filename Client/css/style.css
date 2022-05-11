@@ -16,6 +16,10 @@ p{
     margin-bottom: 2.5vh;
 }
 
+img{
+    height: 30vh;
+}
+
 #searchTerm{
     display: flex;
     height: 44px;
